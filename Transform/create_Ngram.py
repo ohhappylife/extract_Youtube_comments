@@ -8,10 +8,10 @@ __email__ = "sshon2@alumni.jh.edu"
 __status__ = "Production"
 
 import pandas as pd
-import information
 import re
 import unicodedata
 import nltk
+from Load import save_to_s3
 
 def basic_clean(text):
   """
@@ -42,6 +42,6 @@ def Ngram(df, name, col_name):
 
     ngram_title = (pd.Series(nltk.ngrams(title, i)).value_counts()).reset_index()
 
-    information.savetoBucket(ngram_title, 'ngram', ftitle)
+    save_to_s3.savetoBucket(ngram_title, 'ngram', ftitle)
 
 
