@@ -1,7 +1,5 @@
-import Other.load_csv_file
 import crawll_ids
 import temp
-from Extract.extract_comment import video_comments
 from Load.save_to_cwd import save_file
 from Transform.remove_Emoji import remove_emoji
 from Transform.transform_to_df import basic_cleaning
