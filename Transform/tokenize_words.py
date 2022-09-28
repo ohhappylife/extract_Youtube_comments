@@ -17,5 +17,5 @@ def tokenize_words(df, colName):
   :rtype: dataframe
   """
   new_name = colName + "_tokenized"
-  df['new_name'] = df[colName].apply(word_tokenize)
+  df[new_name] = df[colName].apply(word_tokenize)
   return df
