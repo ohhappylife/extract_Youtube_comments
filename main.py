@@ -7,8 +7,7 @@ from Other import load_csv_file
 from Extract import extract_main
 
 api_key = str(temp.getGoogleKey())
-print(api_key)
-link = load_csv_file.load_file('l.csv')
+link = load_csv_file.load_file('url.txt')
 ids = crawll_ids.getID(link)
 
 for count, id in enumerate(ids):
