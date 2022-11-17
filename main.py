@@ -1,12 +1,11 @@
 import crawll_ids
-import temp
 from Load.save_to_cwd import save_file
 from Transform.remove_Emoji import remove_emoji
 from Transform.transform_to_df import basic_cleaning
 from Other import load_csv_file
 from Extract import extract_main
 
-api_key = str(temp.getGoogleKey())
+api_key = str("AIzaSyBa7u0sBZnBbO9_0xo__M_b_Vl7kB7sM10")
 link = load_csv_file.load_file('url.txt')
 ids = crawll_ids.getID(link)
 
