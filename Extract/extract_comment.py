@@ -1,5 +1,7 @@
-from googleapiclient.discovery import build
+import os
+import sys
 
+from googleapiclient.discovery import build
 def video_comments(api_key, video_id):
   nesteddict = {}
 
