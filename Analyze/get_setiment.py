@@ -1,5 +1,4 @@
 from transformers import pipeline
-
 def get_sentiment(df):
     sentimentAnalysis_pipeline = pipeline("sentiment-analysis")
     df['comment_sentiment'] = df['comment'].apply(sentimentAnalysis_pipeline)
@@ -20,8 +19,6 @@ def get_sentiment(df):
             mean_score = round(sum(scores) / len(scores),4)
             min_score = round(min(scores),4)
             max_score = round(max(scores),4)
-        else:
-            pass
         scores = []
         df.iloc[counter, df.columns.get_loc('commentoncomment_mean_score')] = mean_score
         df.iloc[counter, df.columns.get_loc('commentoncomment_min_score')] = min_score

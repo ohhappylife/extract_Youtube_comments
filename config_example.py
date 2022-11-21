@@ -2,8 +2,8 @@
 url = [""] # Please store the list of URLs as the list form.
 apikey = ""
 
-bucket_csv = ""
-bucket_excel = ""
+s3_bucketname_csv = ""
+s3_bucketname_excel = ""
 bool_store_merged_csv = True
 bool_store_merged_excel = True
 bool_store_merged_csv_s3 = True

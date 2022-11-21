@@ -1,14 +1,26 @@
 # Youtube Comments Extractor
-This will collects Youtube comments along with date of published, comments on comments, and number of "likes" that comment gets.
+## Purpose
+To crawl and get the sentiments of the comments and comments on comment on multiple Youtube videos.
 
-<b> As of September 29th 2022, application is still in development; it might have some bugs or errors </b>
+## Requirements
+- To store the file into S3, S3 buckets and credential need to be configured
+- To store the file into cwd, users shall have privilege to wrtie the file.
+- Users need to create API key for Google API client:
+  - https://support.google.com/googleapi/answer/6158862?hl=en
+  
+## Data to be collected
+This will collect Youtube comments along with the followings:
+   - date of comments published
+   - Username of the comment
+   - comments on comments
+   - Number of comments on comment
+   - number of "likes" that comment gets
+   - Extracted keyword from comment
+   - Extracted keyword from comment on comment
+   - Sentiment and sentiment scores of comment
+   - Sentiment and sentiment scores of comment on comment
 
 ## How to use it:
-1. Please save txt file into cwd that has Youtube URL that users want to collect.
-   - If you have multiple Youtube videos to collect, please separate URL by line.
-2. Run the script.
-3. Crawled comments will be stored into cwd as csv format.
-
-## To be updated:
-1. Stored comments into S3 storage.
-2. Create Ngram / remove stopwords for analyzing comments.
+1. Please configure the config_example py.
+2. Change the file name from config_example.py to config.py 
+3. Run the main.py

@@ -1,6 +1,4 @@
 import demoji
-
-
 def remove_emoji(df):
   l = list(df.columns)
   for li in l:

@@ -1,7 +1,6 @@
 from keybert import KeyBERT
 
 def summarize(df, col):
-  # No model is supplied; default model = cnn
   keybert = KeyBERT()
   keywords = keybert.extract_keywords(
     df[col],
