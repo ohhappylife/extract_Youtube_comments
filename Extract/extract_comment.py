@@ -36,7 +36,7 @@ def video_comments(api_key, video_id):
 
     if replycount > 0:
       for reply in item['replies']['comments']:
-        replies.append((reply['snippet']['textDisplay']))
+        replies.append((reply['snippet']['textDisplay'])  + "||||")
     thisdict['commentoncomment'] = replies
 
     nesteddict[c] = thisdict

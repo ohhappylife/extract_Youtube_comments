@@ -1,4 +1,3 @@
-from config import ngram_start, ngram_ends
 """
   create_Ngram.py
   Generating N-gram from sentences
@@ -9,11 +8,9 @@ __email__ = "sshon2@alumni.jh.edu"
 __status__ = "Production"
 
 import pandas as pd
-import information
 import re
 import unicodedata
 import nltk
-from config import s3_ngram
 def basic_clean(text):
   """
   Clean text data for generating N-gram

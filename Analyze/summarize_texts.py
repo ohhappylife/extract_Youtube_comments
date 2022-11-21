@@ -1,7 +1,7 @@
 from transformers import pipeline
-from config import summary_max_length, summary_min_length
 
 def get_keyword(df):
   summarizer = pipeline("summarization")
-  df['summarized_text'] = [x['summary_text'] for x in summarizer(df['Text'].tolist(), min_length=summary_min_length ,max_length=summary_max_length)]
+  df['comment_key'] = [x['summary_text'] for x in summarizer(df['comment'].tolist(), min_length=0 ,max_length=150)]
+  df['commentoncommentkey'] = [x['summary_text'] for x in summarizer(df['commentoncomment'].tolist(), min_length=0 ,max_length=150)]
   return df
