@@ -1,9 +1,8 @@
-import crawll_ids
 from Load.save_to_cwd import save_file
 from Transform.remove_Emoji import remove_emoji
 from Transform.transform_to_df import basic_cleaning
-from Other import load_csv_file
-from Extract import extract_main
+from Load import load_csv_file
+from Extract import extract_main, crawll_ids
 from Analyze import extract_keywords, get_setiment
 
 api_key = str("AIzaSyBa7u0sBZnBbO9_0xo__M_b_Vl7kB7sM10")
