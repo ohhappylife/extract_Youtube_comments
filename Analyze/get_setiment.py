@@ -19,9 +19,9 @@ def get_sentiment(df):
         else:
             pass
         scores = []
-        df.iloc[counter, df.columns.get_loc('mean_score')] = mean_score
-        df.iloc[counter, df.columns.get_loc('min_score')] = min_score
-        df.iloc[counter, df.columns.get_loc('max_score')] = max_score
+        df.iloc[counter, df.columns.get_loc('commentoncomment_mean_score')] = mean_score
+        df.iloc[counter, df.columns.get_loc('commentoncomment_min_score')] = min_score
+        df.iloc[counter, df.columns.get_loc('commentoncomment_max_score')] = max_score
         counter = counter + 1
         min_score = 0
         max_score = 0

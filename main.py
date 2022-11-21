@@ -4,7 +4,7 @@ from Transform.remove_Emoji import remove_emoji
 from Transform.transform_to_df import basic_cleaning
 from Other import load_csv_file
 from Extract import extract_main
-from Analyze import create_Ngram, extract_keywords, summarize_texts, get_setiment
+from Analyze import extract_keywords, get_setiment
 
 api_key = str("AIzaSyBa7u0sBZnBbO9_0xo__M_b_Vl7kB7sM10")
 link = load_csv_file.load_file('url.txt')
