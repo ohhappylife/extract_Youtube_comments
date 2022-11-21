@@ -1,13 +1,14 @@
 # Youtube Comments Extractor
 ## Purpose
 To crawl and get the sentiments of the comments and comments on comment on multiple Youtube videos.
+  ![img.png](img.png)
 
 ## Requirements
 - To store the file into S3, S3 buckets and credential need to be configured
 - To store the file into cwd, users shall have privilege to wrtie the file.
 - Users need to create API key for Google API client:
   - https://support.google.com/googleapi/answer/6158862?hl=en
-  
+
 ## Data to be collected
 This will collect Youtube comments along with the followings:
    - date of comments published
