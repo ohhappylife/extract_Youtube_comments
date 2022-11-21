@@ -1,4 +1,3 @@
-import config
 from Load import store_to_s3
 from Load.save_to_cwd import save_file
 from Transform.remove_Emoji import remove_emoji
@@ -18,9 +17,12 @@ for count, id in enumerate(ids):
 
     df = extract_keywords.summarize(df, 'comment')
     df = extract_keywords.summarize(df, 'commentoncomment')
+
     df['commentoncomment_mean_score'] = 0
     df['commentoncomment_max_score'] = 0
     df['commentoncomment_min_score'] = 0
+    df['comment_sentiment'] = 'Not Available'
+    df['comment_sentiment_Score'] = 0
     df = get_setiment.get_sentiment(df)
 
     if bool_store_merged_csv == True:

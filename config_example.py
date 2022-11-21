@@ -1,5 +1,5 @@
 # Please change file name into config.py before run the script.
-url = [""]
+url = [""] # Please store the list of URLs as the list form.
 apikey = ""
 
 bucket_csv = ""
