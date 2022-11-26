@@ -20,7 +20,7 @@ for count, id in enumerate(ids):
 
     df = extract_keywords.summarize(df, 'comment')
     df = extract_keywords.summarize(df, 'commentoncomment')
-
+    # initialize the values.
     df['commentoncomment_mean_score'] = 0
     df['commentoncomment_max_score'] = 0
     df['commentoncomment_min_score'] = 0
