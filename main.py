@@ -7,7 +7,8 @@ from Extract import extract_main, crawll_ids
 from Analyze import extract_keywords, get_setiment
 from config import apikey, url, s3_bucketname_excel, s3_bucketname_csv\
     ,bool_store_merged_csv_s3,bool_store_merged_csv,bool_store_merged_excel, \
-    bool_store_merged_excel_s3, bool_store_merged_excel_cwd, bool_store_merged_csv_cwd
+    bool_store_merged_excel_s3, bool_store_merged_excel_cwd, bool_store_merged_csv_cwd, \
+    fname_csv, fname_excel
 
 api_key = apikey
 ids = crawll_ids.getID(url)
